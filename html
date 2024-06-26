@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Undangan Pernikahan</h1>
+            <p>Dengan segala hormat dan rasa syukur, kami mengundang Anda untuk menghadiri pernikahan kami.</p>
+        </header>
+        <section class="couple">
+            <div class="bride">
+                <img src="bride.jpg" alt="Bride">
+                <h2>Nama Mempelai Wanita</h2>
+            </div>
+            <div class="groom">
+                <img src="groom.jpg" alt="Groom">
+                <h2>Nama Mempelai Pria</h2>
+            </div>
+        </section>
+        <section class="details">
+            <h2>Detail Acara</h2>
+            <p>Waktu: 1 Januari 2025</p>
+            <p>Tempat: Gedung Serbaguna</p>
+            <div id="map"></div>
+        </section>
+        <button onclick="RSVP()">Konfirmasi Kehadiran</button>
+    </div>
+
+    <div id="rsvp-form" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRSVP()">&times;</span>
+            <h2>RSVP</h2>
+            <form id="rsvp">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
