@@ -1,7 +1,12 @@
-/project-folder
-  |-- index.html
-  |-- styles.css
-  |-- script.js
-  |-- bride.jpg
-  |-- groom.jpg
-  |-- background.jpg
+wedding-invitation/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── scripts.js
+├── images/
+│   └── (masukkan gambar-gambar yang diperlukan)
+├── fonts/
+│   └── (masukkan font khusus jika diperlukan)
+└── assets/
+    └── (masukkan file tambahan seperti ikon)
