@@ -4,50 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Pernikahan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Undangan Pernikahan</h1>
-            <p>Dengan segala hormat dan rasa syukur, kami mengundang Anda untuk menghadiri pernikahan kami.</p>
-        </header>
-        <section class="couple">
-            <div class="bride">
-                <img src="bride.jpg" alt="Bride">
-                <h2>Nama Mempelai Wanita</h2>
-            </div>
-            <div class="groom">
-                <img src="groom.jpg" alt="Groom">
-                <h2>Nama Mempelai Pria</h2>
-            </div>
-        </section>
-        <section class="details">
-            <h2>Detail Acara</h2>
-            <p>Waktu: 1 Januari 2025</p>
-            <p>Tempat: Gedung Serbaguna</p>
-            <div id="map"></div>
-        </section>
-        <button onclick="RSVP()">Konfirmasi Kehadiran</button>
-    </div>
-
-    <div id="rsvp-form" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeRSVP()">&times;</span>
-            <h2>RSVP</h2>
-            <form id="rsvp">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Kirim</button>
-            </form>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Nama Mempelai & Nama Mempelai</h1>
+            <p>Dengan penuh suka cita kami mengundang Anda untuk hadir di pernikahan kami</p>
         </div>
-    </div>
-
-    <script src="script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    </header>
+    <section class="details">
+        <h2>Tanggal dan Waktu</h2>
+        <p>Sabtu, 1 Januari 2025</p>
+        <p>10:00 AM</p>
+    </section>
+    <section class="location">
+        <h2>Lokasi</h2>
+        <p>Gedung Serbaguna, Jakarta</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126769.44949993938!2d106.6894290501798!3d-6.229728135537497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f0e4db1d47%3A0x302069d73f76c20!2sJakarta!5e0!3m2!1sen!2sid!4v1592560834294!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <section class="gallery">
+        <h2>Galeri</h2>
+        <div class="gallery-container">
+            <img src="images/photo1.jpg" alt="Photo 1">
+            <img src="images/photo2.jpg" alt="Photo 2">
+            <img src="images/photo3.jpg" alt="Photo 3">
+        </div>
+    </section>
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="attending">Apakah Anda akan hadir?</label>
+            <select id="attending" name="attending">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Nama Mempelai</p>
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
